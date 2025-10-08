@@ -24,5 +24,30 @@ PDF Parsing: PyPDF2
 
 Platform: Google Colab 
 
+## 🛠 Setup Instruction 
+For Downloading Gradio , Mistral_Api , PyPDF
+
+```!pip install gradio mistralai PyPDF2```
+
+## Usage Instructions
+
+Run the script in a Google Colab cell.
+
+Upload a file (.pdf or .txt) or paste text manually.
+
+Select a summary style:
+
+Brief
+
+Detailed
+
+Bullet Points
+
+Click the Summarize button.
+
+View the generated summary in the output panel.
+
+A public link will be provided via Gradio (share=True) for easy sharing.
+
 # NOTE
 API Key have a Expiry of 15th October 2025. So if run this code after this date it might not work as expected
