@@ -31,23 +31,60 @@ For Downloading Gradio , Mistral_Api , PyPDF
 
 ## Usage Instructions
 
-Run the script in a Google Colab cell.
+1. Run the script in a Google Colab cell.
 
-Upload a file (.pdf or .txt) or paste text manually.
+2. Upload a file (.pdf or .txt) or paste text manually.
 
-Select a summary style:
+3. Select a summary style:
 
-Brief
+       Brief
 
-Detailed
+       Detailed
 
-Bullet Points
+       Bullet Points
 
-Click the Summarize button.
+4. Click the Summarize button.
 
-View the generated summary in the output panel.
+5. View the generated summary in the output panel.
 
 A public link will be provided via Gradio (share=True) for easy sharing.
+
+## 🧠 Approach & Design Decisions
+
+### 🔹 Multi-Input Flexibility  
+The app supports both **file upload** and **text input**, giving users flexibility based on their needs. It detects and processes the input method dynamically.
+
+### 🔹 API Integration  
+Used the **Mistral AI API** (`mistral-small-latest` model) for summarization. It's initialized with a secure API key stored in **Colab secrets** (`userdata`), avoiding hardcoded keys.
+
+### 🔹 Prompt Engineering for Styles  
+Custom prompt templates are used for three summary styles:
+- **Brief**: Short 2–3 sentence summary  
+- **Detailed**: Full descriptive summary  
+- **Bullet Points**: List of main points  
+
+This allows users to choose how concise or informative they want the output.
+
+### 🔹 Error Handling  
+The app includes:
+- API key validation  
+- Input validation (empty input, file errors)  
+- Length limits (max **50,000 characters**)  
+
+This ensures the app fails gracefully and guides the user when needed.
+
+### 🔹 Gradio UI  
+Gradio was chosen for its **simplicity** and **Colab compatibility**. It enables fast prototyping and a shareable public interface with minimal code.
+
+---
+
+## 📎 Be Aware
+
+- Only one input type should be used at a time (**file OR text**)  
+- File types supported: `.pdf`, `.txt`  
+- Text input limit: **50,000 characters**  
+- Requires valid **Mistral API access**
+
 
 # NOTE
 API Key have a Expiry of 15th October 2025. So if run this code after this date it might not work as expected
