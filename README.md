@@ -24,3 +24,5 @@ PDF Parsing: PyPDF2
 
 Platform: Google Colab 
 
+# NOTE
+API Key have a Expiry of 15th October 2025. So if run this code after this date it might not work as expected
