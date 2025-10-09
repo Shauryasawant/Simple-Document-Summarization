@@ -31,7 +31,8 @@ For Downloading Gradio , Mistral_Api , PyPDF
 
 ## Usage Instructions
 
-1. Run the script in a Google Colab cell.
+1. Run the script in a Google Colab cell. (After running both cells, a **link will be generated** for the Document Summarizer.  
+Click on the link to open it in a **new tab** for better layout and readability.)
 
 2. Upload a file (.pdf or .txt) or paste text manually.
 
