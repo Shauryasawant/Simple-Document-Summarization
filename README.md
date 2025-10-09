@@ -16,7 +16,7 @@ This is a document summarization tool built using Gradio for the front-end and t
 
 # Tech Stack
 
-Frontend: Gradio (As this Requires less efforts for making UI.if we are in time bound or want to focus more on implementation)
+Frontend: Gradio (As this Requires less efforts for making UI. As if we are in time bound or want to focus more on implementation)
 
 LLM: Mistral (via mistralai)
 
