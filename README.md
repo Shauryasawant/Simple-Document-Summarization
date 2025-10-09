@@ -77,6 +77,9 @@ This ensures the app fails gracefully and guides the user when needed.
 Gradio was chosen for its **simplicity** and **Colab compatibility**. It enables fast prototyping and a shareable public interface with minimal code.
 
 ---
+### --App Link--
+
+```https://72458594c5faa5f2b1.gradio.live```
 
 ## 📎 Be Aware
 
